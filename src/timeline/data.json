@@ -1,0 +1,639 @@
+{
+    "emperors": [
+        {
+          "name": "五代十国",
+          "en": "Five Dynasties and Ten Kingdoms",
+          "start": "907",
+          "end": "960年2月3日"
+        },
+        {
+          "name": "太祖",
+          "en": "Taizu",
+          "start": "960年2月3日",
+          "end": "976年11月14日"
+        },
+        {
+          "name": "太宗",
+          "en": "Taizong",
+          "start": "976年11月14日",
+          "end": "997年5月8日"
+        },
+        {
+          "name": "真宗",
+          "en": "Zhenzong",
+          "start": "997年5月8日",
+          "end": "1022年3月23日"
+        },
+        {
+          "name": "仁宗",
+          "en": "Renzong",
+          "start": "1022年3月23日",
+          "end": "1063年4月30日"
+        },
+        {
+          "name": "英宗",
+          "en": "Yingzong",
+          "start": "1063年4月30日",
+          "end": "1067年1月25日"
+        },
+        {
+          "name": "神宗",
+          "en": "Shenzong",
+          "start": "1067年1月25日",
+          "end": "1085年4月1日"
+        },
+        {
+          "name": "哲宗",
+          "en": "Zhezong",
+          "start": "1085年4月1日",
+          "end": "1100年2月23日"
+        },
+        {
+          "name": "徽宗",
+          "en": "Huizong",
+          "start": "1100年2月23日",
+          "end": "1126年1月18日"
+        },
+        {
+          "name": "钦宗",
+          "en": "Qinzong",
+          "start": "1126年1月18日",
+          "end": "1127年3月20日"
+        },
+        {
+          "name": "高宗",
+          "en": "Gaozong",
+          "start": "1127年6月12日",
+          "end": "1162年7月24日"
+        },
+        {
+          "name": "孝宗",
+          "en": "Xiaozong",
+          "start": "1162年7月24日",
+          "end": "1189年2月18日"
+        },
+        {
+          "name": "光宗",
+          "en": "Guangzong",
+          "start": "1189年2月18日",
+          "end": "1194年7月24日"
+        },
+        {
+          "name": "宁宗",
+          "en": "Ningzong",
+          "start": "1194年7月24日",
+          "end": "1224年9月18日"
+        },
+        {
+          "name": "理宗",
+          "en": "Lizong",
+          "start": "1224年9月18日",
+          "end": "1264年11月16日"
+        },
+        {
+          "name": "度宗",
+          "en": "Duzong",
+          "start": "1264年11月16日",
+          "end": "1274年8月12日"
+        },
+        {
+          "name": "恭宗",
+          "en": "Gongzong",
+          "start": "1274年8月12日",
+          "end": "1276年2月4日"
+        },
+        {
+          "name": "端宗",
+          "en": "Duanzong",
+          "start": "1276年6月14日",
+          "end": "1278年5月8日"
+        },
+        {
+          "name": "帝昺",
+          "en": "Dibing",
+          "start": "1278年5月10日",
+          "end": "1279年3月19日"
+        },
+        {
+          "name": "元朝",
+          "en": "Yuan Dynasty",
+          "start": "1279年3月19日",
+          "end": "1368年2月4日"
+        }
+    ],
+    "nianhao": [
+        {
+          "name": "建隆",
+          "en": "Jianlong",
+          "start": "960年2月4日",
+          "end": "963年12月3日"
+        },
+        {
+          "name": "乾德",
+          "en": "Qiande",
+          "start": "963年12月4日",
+          "end": "968年12月15日"
+        },
+        {
+          "name": "开宝",
+          "en": "Kaibao",
+          "start": "968年12月16日",
+          "end": "977年1月13日"
+        },
+        {
+          "name": "太平兴国",
+          "en": "Taipingxingguo",
+          "start": "977年1月14日",
+          "end": "984年12月15日"
+        },
+        {
+          "name": "雍熙",
+          "en": "Yongxi",
+          "start": "984年12月16日",
+          "end": "988年2月6日"
+        },
+        {
+          "name": "端拱",
+          "en": "Duangong",
+          "start": "988年2月7日",
+          "end": "990年1月29日"
+        },
+        {
+          "name": "淳化",
+          "en": "Chunhua",
+          "start": "990年1月30日",
+          "end": "995年2月2日"
+        },
+        {
+          "name": "至道",
+          "en": "Zhidao",
+          "start": "995年2月3日",
+          "end": "998年1月30日"
+        },
+        {
+          "name": "咸平",
+          "en": "Xianping",
+          "start": "998年1月31日",
+          "end": "1004年1月24日"
+        },
+        {
+          "name": "景德",
+          "en": "Jingde",
+          "start": "1004年1月25日",
+          "end": "1008年2月14日"
+        },
+        {
+          "name": "大中祥符",
+          "en": "Dazhongxiangfu",
+          "start": "1008年2月15日",
+          "end": "1017年1月30日"
+        },
+        {
+          "name": "天禧",
+          "en": "Tianxi",
+          "start": "1017年1月31日",
+          "end": "1022年2月3日"
+        },
+        {
+          "name": "乾兴",
+          "en": "Qianxing",
+          "start": "1022年2月4日",
+          "end": "1023年1月24日"
+        },
+        {
+          "name": "天圣",
+          "en": "Tiansheng",
+          "start": "1023年1月25日",
+          "end": "1032年12月10日"
+        },
+        {
+          "name": "明道",
+          "en": "Mingdao",
+          "start": "1032年12月11日",
+          "end": "1034年1月22日"
+        },
+        {
+          "name": "景祐",
+          "en": "Jingyou",
+          "start": "1034年1月23日",
+          "end": "1038年12月15日"
+        },
+        {
+          "name": "宝元",
+          "en": "Baoyuan",
+          "start": "1038年12月16日",
+          "end": "1040年4月4日"
+        },
+        {
+          "name": "康定",
+          "en": "Kangding",
+          "start": "1040年4月5日",
+          "end": "1041年12月15日"
+        },
+        {
+          "name": "庆历",
+          "en": "Qingli",
+          "start": "1041年12月16日",
+          "end": "1049年2月4日"
+        },
+        {
+          "name": "皇祐",
+          "en": "Huangyou",
+          "start": "1049年2月5日",
+          "end": "1054年5月9日"
+        },
+        {
+          "name": "至和",
+          "en": "Zhihe",
+          "start": "1054年5月10日",
+          "end": "1056年10月22日"
+        },
+        {
+          "name": "嘉祐",
+          "en": "Jiayou",
+          "start": "1056年10月23日",
+          "end": "1064年1月20日"
+        },
+        {
+          "name": "治平",
+          "en": "Zhiping",
+          "start": "1064年1月21日",
+          "end": "1067年2月5日"
+        },
+        {
+          "name": "熙宁",
+          "en": "Xining",
+          "start": "1068年2月6日",
+          "end": "1078年1月16日"
+        },
+        {
+          "name": "元丰",
+          "en": "Yuanfeng",
+          "start": "1078年1月17日",
+          "end": "1086年1月17日"
+        },
+        {
+          "name": "元祐",
+          "en": "Yuanyou",
+          "start": "1086年1月18日",
+          "end": "1094年4月18日"
+        },
+        {
+          "name": "绍圣",
+          "en": "Shaosheng",
+          "start": "1094年4月19日",
+          "end": "1098年7月1日"
+        },
+        {
+          "name": "元符",
+          "en": "Yuanfu",
+          "start": "1098年7月2日",
+          "end": "1101年1月30日"
+        },
+        {
+          "name": "建中靖国",
+          "en": "Jianzhongjingguo",
+          "start": "1101年1月31日",
+          "end": "1102年1月20日"
+        },
+        {
+          "name": "崇宁",
+          "en": "Chongning",
+          "start": "1102年1月21日",
+          "end": "1107年1月25日"
+        },
+        {
+          "name": "大观",
+          "en": "Daguan",
+          "start": "1107年1月26日",
+          "end": "1111年2月9日"
+        },
+        {
+          "name": "政和",
+          "en": "Zhenghe",
+          "start": "1111年2月10日",
+          "end": "1118年12月14日"
+        },
+        {
+          "name": "重和",
+          "en": "Chonghe",
+          "start": "1118年12月15日",
+          "end": "1119年3月12日"
+        },
+        {
+          "name": "宣和",
+          "en": "Xuanhe",
+          "start": "1119年3月13日",
+          "end": "1126年1月24日"
+        },
+        {
+          "name": "靖康",
+          "en": "Jingkang",
+          "start": "1126年1月25日",
+          "end": "1127年6月11日"
+        },
+        {
+          "name": "建炎",
+          "en": "Jianyan",
+          "start": "1127年6月12日",
+          "end": "1129年3月31日"
+        },
+        {
+          "name": "明受",
+          "en": "Mingshou",
+          "start": "1129年4月1日",
+          "end": "1129年4月21日"
+        },
+        {
+          "name": "建炎",
+          "en": "Jianyan",
+          "start": "1129年4月22日",
+          "end": "1131年1月30日"
+        },
+        {
+          "name": "绍兴",
+          "en": "Shaoxing",
+          "start": "1131年1月31日",
+          "end": "1163年2月4日"
+        },
+        {
+          "name": "隆兴",
+          "en": "Longxing",
+          "start": "1163年2月5日",
+          "end": "1165年2月12日"
+        },
+        {
+          "name": "乾道",
+          "en": "Qiandao",
+          "start": "1165年2月13日",
+          "end": "1174年2月3日"
+        },
+        {
+          "name": "淳熙",
+          "en": "Chunxi",
+          "start": "1174年2月4日",
+          "end": "1190年2月6日"
+        },
+        {
+          "name": "绍熙",
+          "en": "Shaoxi",
+          "start": "1190年2月7日",
+          "end": "1195年2月11日"
+        },
+        {
+          "name": "庆元",
+          "en": "Qingyuan",
+          "start": "1195年2月12日",
+          "end": "1201年2月4日"
+        },
+        {
+          "name": "嘉泰",
+          "en": "Jiatai",
+          "start": "1201年2月5日",
+          "end": "1205年1月21日"
+        },
+        {
+          "name": "开禧",
+          "en": "Kaixi",
+          "start": "1205年1月22日",
+          "end": "1208年1月18日"
+        },
+        {
+          "name": "嘉定",
+          "en": "Jiading",
+          "start": "1208年1月19日",
+          "end": "1225年2月8日"
+        },
+        {
+          "name": "宝庆",
+          "en": "Baoqing",
+          "start": "1225年2月9日",
+          "end": "1228年2月7日"
+        },
+        {
+          "name": "绍定",
+          "en": "Shaoding",
+          "start": "1228年2月8日",
+          "end": "1234年1月30日"
+        },
+        {
+          "name": "端平",
+          "en": "Duanping",
+          "start": "1234年1月31日",
+          "end": "1237年1月27日"
+        },
+        {
+          "name": "嘉熙",
+          "en": "Jiaxi",
+          "start": "1237年1月28日",
+          "end": "1241年2月12日"
+        },
+        {
+          "name": "淳祐",
+          "en": "Chunyou",
+          "start": "1241年2月13日",
+          "end": "1253年1月30日"
+        },
+        {
+          "name": "宝祐",
+          "en": "Baoyou",
+          "start": "1253年1月31日",
+          "end": "1259年1月24日"
+        },
+        {
+          "name": "开庆",
+          "en": "Kaiqing",
+          "start": "1259年1月25日",
+          "end": "1260年2月12日"
+        },
+        {
+          "name": "景定",
+          "en": "Jingding",
+          "start": "1260年2月13日",
+          "end": "1265年1月18日"
+        },
+        {
+          "name": "咸淳",
+          "en": "Xianchun",
+          "start": "1265年1月19日",
+          "end": "1275年1月28日"
+        },
+        {
+          "name": "德祐",
+          "en": "Deyou",
+          "start": "1275年1月29日",
+          "end": "1276年6月13日"
+        },
+        {
+          "name": "景炎",
+          "en": "Jingyan",
+          "start": "1276年6月14日",
+          "end": "1278年5月22日"
+        },
+        {
+          "name": "祥兴",
+          "en": "Xiangxing",
+          "start": "1278年5月23日",
+          "end": "1279年3月19日"
+        }
+    ],
+    "events": [
+        {
+            "time": "960年1月3日",
+            "event": "陈桥兵变",
+            "importance": 3,
+            "en": "Chenqiao Mutiny"
+        },
+        {
+            "time": "962年7月9日",
+            "event": "杯酒释兵权",
+            "importance": 1,
+            "en": "Drink to Release Military Power"
+        },
+        {
+            "time": "969年10月",
+            "event": "二次杯酒释兵权",
+            "importance": 1,
+            "en": "Second Drink to Release Military Power"
+        },
+        {
+            "time": "986年",
+            "event": "雍熙北伐",
+            "importance": 1,
+            "en": "Yongxi Northern Expedition"
+        },
+        {
+            "time": "1005年1月",
+            "event": "澶渊之盟",
+            "importance": 1,
+            "en": "Treaty of Shanyuan"
+        },
+        {
+            "time": "1040年3月",
+            "event": "三川口之战",
+            "importance": 1,
+            "en": "Battle of Sanchuan Kou"
+        },
+        {
+            "time": "1041年2月",
+            "event": "好水川之战",
+            "importance": 1,
+            "en": "Battle of Haoshuichuan"
+        },
+        {
+            "time": "1042年",
+            "event": "定川之战",
+            "importance": 1,
+            "en": "Battle of Dingchuan"
+        },
+        {
+            "start": "1043年9月",
+            "end": "1045年",
+            "event": "庆历新政",
+            "importance": 2,
+            "en": "Reform in Qingli"
+        },
+        {
+            "start": "1069年2月",
+            "end": "1085年",
+            "event": "熙宁变法",
+            "importance": 3,
+            "en": "Xining Reform"
+        },
+        {
+            "start": "1080年",
+            "end": "1082年",
+            "event": "元丰改制",
+            "importance": 2,
+            "en": "Yuanfeng Reform"
+        },
+        {
+            "start": "1086年",
+            "end": "1093年",
+            "event": "元祐更化",
+            "importance": 1,
+            "en": "Yuanyou Reform"
+        },
+        {
+            "time": "1096年",
+            "event": "平夏城之战",
+            "importance": 1,
+            "en": "Battle of Pingxia City"
+        },
+        {
+            "time": "1114年",
+            "event": "横山之战",
+            "importance": 1,
+            "en": "Battle of Hengshan"
+        },
+        {
+            "time": "1120年",
+            "event": "海上之盟",
+            "importance": 1,
+            "en": "Alliance on the Sea"
+        },
+        {
+            "start": "1125年9月",
+            "end": "1127年3月",
+            "event": "靖康之难",
+            "importance": 3,
+            "en": "Jingkang Incident"
+        },
+        {
+            "time": "1142年",
+            "event": "绍兴和议",
+            "importance": 3,
+            "en": "Treaty of Shaoxing"
+        },
+        {
+            "time": "1161年",
+            "event": "采石大捷",
+            "importance": 2,
+            "en": "Victory at Caishi"
+        },
+        {
+            "time": "1164年",
+            "event": "隆兴和议",
+            "importance": 3,
+            "en": "Treaty of Longxing"
+        },
+        {
+            "time": "1194年",
+            "event": "绍熙内禅",
+            "importance": 4,
+            "en": "Abdication of Shaoxi"
+        },
+        {
+            "start": "1195年",
+            "end": "1202年",
+            "event": "庆元党禁",
+            "importance": 1,
+            "en": "Qingyuan Party Prohibition"
+        },
+        {
+            "time": "1206年",
+            "event": "开禧北伐",
+            "importance": 1,
+            "en": "Northern Expedition of Kaixi"
+        },
+        {
+            "time": "1233年",
+            "event": "端平更化",
+            "importance": 1,
+            "en": "Duanping Reform"
+        },
+        {
+            "start": "1267年",
+            "end": "1273年",
+            "event": "宋蒙襄樊战争",
+            "importance": 2,
+            "en": "Battle of Xiangfan"
+        },
+        {
+            "time": "1279年",
+            "event": "厓山海战",
+            "importance": 4,
+            "en": "Battle of Yashan"
+        }
+    ]
+}

@@ -1,0 +1,485 @@
+@font-face {
+    font-family: "Source";
+    src: url("/font/SourceHanSerifCN-Bold.otf");
+}
+@font-face {
+    font-family: "Source-Heavy";
+    src: url("/font/SourceHanSerifCN-Heavy.otf");
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Source";
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#app {
+    margin: auto;
+    width: min(100vw, calc(100vh / 9 * 16));
+    height: min(100vh, calc(100vw / 16 * 9));
+    overflow: hidden;
+    font-family: "Source";
+    position: relative;
+}
+
+/* 自定义滚动轴样式 */
+::-webkit-scrollBar {
+  width: 0px;/*垂直方向的宽*/
+  height: 0px;/*水平方向的宽*/
+}
+::-webkit-scrollBar-thumb {
+  border-radius: 3px;
+  background: #ab8c70;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}/* 滑块样式定义 */
+::-webkit-scrollBar-track {
+  border-radius: 3px;
+  background: #e6dcd4;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+}/* 轨道颜色阴影 */
+::-webkit-scrollbar-button {
+  /* background-color: #e6dcd4; */
+} /* 滑轨两头的监听按钮颜色 不定义则没有*/
+::-webkit-scrollbar-corner {
+  /* background-color: #e6dcd4; */
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+
+/* 选中人物具体信息的相关样式 */
+
+/** 选中的人物切换按钮部分 */
+.selected-figures-list {
+  flex-shrink: 0;
+  overflow: auto hidden;
+}
+.selected-figures-list .figure-item {
+    padding: 0.1em 0.3em;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.2em;
+    flex-shrink: 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+/** 人物基本信息部分 */
+.figure-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    overflow-x: auto;
+    flex-shrink: 0;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    color: #6f4922;
+}
+
+.figure-info .alter-name {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 0.3em;
+}
+.figure-info .alter-name .single-icon {
+    padding: 0.1em 0.3em;
+    border-radius: 0.6em;
+    flex-shrink: 0;
+    user-select: none;
+    color: #fff;
+}
+
+/** 事件详细列表（时间线的形式） */
+.figure-events {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden auto;
+  flex-direction: column;
+}
+
+.figure-events .figure-event {
+  position: relative;
+}
+
+/** 时间线上的原点 */
+.figure-events .figure-event .item-node {
+  position: absolute;
+  left: 0.3em;
+  top: 0.4em;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+}
+
+/** 时间线的直线部分 */
+.figure-events .figure-event .item-timeline {
+  position: absolute;
+  left: 0.6em;
+  width: 0.2em;
+  background-color: #ab8c70;
+  top: 0;
+  bottom: 0;
+}
+.figure-events .figure-event .item-timeline-first {
+  top: 0.4em;
+}
+
+.figure-events .figure-event .event-body {
+  padding-left: 1.5em;
+}
+
+.figure-events .figure-event .event-title {
+  font-size: 1em;
+}
+.figure-events .figure-event .event-title .event-date {
+  user-select: none;
+}
+
+.figure-events .figure-event .event-title .event-location {
+  cursor: pointer;
+}
+
+.figure-events .figure-event .event-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-bottom: 0.5em;
+}
+.figure-events .figure-event .event-posts .event-post {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+  overflow-x: auto;
+}
+.figure-events .figure-event .event-posts .event-post .event-post-name {
+  color: var(--color);
+  border: 1px solid var(--color);
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+  font-size: 0.8em;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.figure-events .figure-event .event-posts .event-post .event-post-institution {
+  color: #555;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.figure-events .figure-event .event-posts .event-post .event-post-institution:hover {
+  color: #000;
+}
+/* 第一个不需要 */
+.figure-events .figure-event .event-posts .event-post .event-post-institution::first-line {
+  content: "";
+}
+.figure-events .figure-event .event-posts .event-post .event-post-institution::before {
+  content: "- ";
+}
+
+.figure-events .figure-event .event-text {
+  font-size: 1em;
+  padding-bottom: 0.5em;
+}
+.figure-events .figure-event .event-text .event-type-icon {
+  font-size: 0.8em;
+  padding: 0.1em 0.3em;
+  border-radius: 0.1em;
+  color: #fff;
+}
+
+.figure-events .figure-event .event-text .keyword {
+  color: #f15447;
+}
+
+.figure-events .figure-event .related-figures {
+  padding-left: 3em;
+  font-size: 10px;
+  display: grid;
+  /** 总共三列，前两列按照内部元素大小自适应，但不超过4em，最后一列占据剩下的空间 */
+  grid-template-columns: auto auto 1fr;
+  column-gap: 0.5em;
+}
+
+.figure-events .figure-event .related-figures .related-figure {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  align-items: center;
+}
+
+.figure-events .figure-event .related-figures .related-figure .related-type {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.3em;
+  padding: 0.1em 0.3em;
+  user-select: none;
+}
+
+.figure-events .figure-event .related-figures .related-figure .related-name {
+  color: #555;
+  cursor: pointer;
+}
+.figure-events .figure-event .related-figures .related-figure .related-name:hover {
+  color: #000;
+}
+
+.figure-events .figure-event .related-figures .related-figure .related-description {
+  color: #555;
+}
+
+
+.post-filter-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+
+.post-filter-container .post-filter-list-wrapper {
+  height: 100%;
+  padding: 0.5em 0.3em;
+  box-sizing: border-box;
+  border: 1px solid #ab8c70;
+  border-radius: 0.3em;
+  flex-shrink: 0;
+}
+
+.post-filter-container .post-filter-list {
+  height: 100%;
+  overflow: hidden auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.post-filter-container .post-filter-list .post-filter-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  user-select: none;
+  cursor: pointer;
+  color: #6f4922;
+  line-height: 1.2em;
+}
+.post-filter-container .post-filter-list .post-filter-item .post-icon {
+  width: 1em;
+  height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post-filter-container .post-filter-list .post-filter-item .post-name {
+  width: 6em;
+}
+.post-filter-container .post-filter-list .post-filter-item .post-count {
+  width: 4em;
+  text-align: right;
+}
+.post-filter-container .post-filter-list .post-filter-item .post-count span {
+  font-size: 0.6em;
+}
+
+.post-filter-container .post-filter-list .post-filter-item.post-filter-item-selected {
+  color: #fff;
+  background-color: rgba(111, 73, 34);
+}
+.post-filter-container .post-filter-list .post-filter-item.post-filter-item-hovered {
+  color: #fff;
+  background-color: rgba(111, 73, 34);
+}
+
+.layui-input:focus {
+  border-color: #6f4922 !important;
+  box-shadow: 0 0 0 3px rgba(111, 73, 34, .08) !important;
+}
+.layui-form-select dl dd.layui-this {
+  color: #6f4922 !important;
+}
+
+
+/** 输入框 */
+input {
+  width: 100%;
+  height: 199%;
+  border: none;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/** 关键词搜索框 */
+.keyword-search-box .input {
+  border: 1px solid #6f4922;
+  border-radius: 0.2em;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+
+.keyword-search-box input {
+  height: 100%;
+  flex-grow: 1;
+}
+
+.keyword-search-box .icon {
+  cursor: pointer;
+  width: 1.5em;
+  height: 1.5em;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyword-search-box .keywords {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  overflow: auto hidden;
+}
+
+.keyword-search-box .keyword {
+  height: 1.2em;
+  font-size: 0.8em;
+  border: 1px solid #6f4922;
+  border-radius: 0.2em;
+  padding: 0.2em 0.4em;
+  background-color: #6f4922;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.keyword-search-box .keyword-icon {
+  cursor: pointer;
+}
+
+.bookmarks .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  border: 1px solid #ab8c70;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+}
+
+.bookmarks .container .bookmark-container {
+  display: flex;
+  overflow: auto hidden;
+  gap: 0.5em;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0.1em 0.5em;
+}
+
+.bookmarks .container .bookmark-add-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color:#6f4922;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #ab8c70;
+  box-sizing: content-box;
+  border-radius: 0.2em;
+  padding: 0 0.2em;
+}
+
+.bookmarks .container .bookmark-add-container:hover {
+  color: #fff;
+  background-color: #6f4922;
+}
+
+.bookmarks .container .bookmark-add-container .bookmark-add-icon {
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+}
+
+.bookmarks .container .bookmark-container .bookmark {
+  width: 8em;
+  height: calc(100% - 0.2em);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border: 1px solid #ab8c70;
+  border-radius: 0 0 0.2em 0.2em;;
+}
+
+.bookmarks .container .bookmark-container .bookmark .snapshot {
+  width: 100%;
+  height: 60%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.bookmarks .container .bookmark-container .bookmark .snapshot canvas {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bookmarks .container .bookmark-container .bookmark .description {
+  width: 100%;
+  height: 1.2em;
+  line-height: 1.2em;
+  font-size: 0.6em;
+  text-align: center;
+  color: #6f4922;
+  flex-shrink: 0;
+}
+
+.bookmarks .container .bookmark-container .bookmark .footer {
+  width: 100%;
+  height: 1.2em;
+  font-size: 1em;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bookmarks .container .bookmark-container .bookmark .footer .icon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-color: #fff;
+  color: #6f4922;
+  border: 1px solid #6f4922;
+  border-radius: 0.2em;
+}
+
+.bookmarks .container .bookmark-container .bookmark .footer .icon:hover {
+  background-color: #6f4922;
+  color: #fff;
+}

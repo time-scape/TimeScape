@@ -1,0 +1,159 @@
+[
+    {
+        "time": "960年1月3日",
+        "event": "陈桥兵变",
+        "importance": 3,
+        "en": "Chenqiao Mutiny"
+    },
+    {
+        "time": "962年7月9日",
+        "event": "杯酒释兵权",
+        "importance": 1,
+        "en": "Drink to Release Military Power"
+    },
+    {
+        "time": "969年10月",
+        "event": "二次杯酒释兵权",
+        "importance": 1,
+        "en": "Second Drink to Release Military Power"
+    },
+    {
+        "time": "986年",
+        "event": "雍熙北伐",
+        "importance": 1,
+        "en": "Yongxi Northern Expedition"
+    },
+    {
+        "time": "1005年1月",
+        "event": "澶渊之盟",
+        "importance": 1,
+        "en": "Treaty of Shanyuan"
+    },
+    {
+        "time": "1040年3月",
+        "event": "三川口之战",
+        "importance": 1,
+        "en": "Battle of Sanchuan Kou"
+    },
+    {
+        "time": "1041年2月",
+        "event": "好水川之战",
+        "importance": 1,
+        "en": "Battle of Haoshuichuan"
+    },
+    {
+        "time": "1042年",
+        "event": "定川之战",
+        "importance": 1,
+        "en": "Battle of Dingchuan"
+    },
+    {
+        "start": "1043年9月",
+        "end": "1045年",
+        "event": "庆历新政",
+        "importance": 2,
+        "en": "Reform in Qingli"
+    },
+    {
+        "start": "1069年2月",
+        "end": "1085年",
+        "event": "熙宁变法",
+        "importance": 3,
+        "en": "Xining Reform"
+    },
+    {
+        "start": "1080年",
+        "end": "1082年",
+        "event": "元丰改制",
+        "importance": 2,
+        "en": "Yuanfeng Reform"
+    },
+    {
+        "start": "1086年",
+        "end": "1093年",
+        "event": "元祐更化",
+        "importance": 1,
+        "en": "Yuanyou Reform"
+    },
+    {
+        "time": "1096年",
+        "event": "平夏城之战",
+        "importance": 1,
+        "en": "Battle of Pingxia City"
+    },
+    {
+        "time": "1114年",
+        "event": "横山之战",
+        "importance": 1,
+        "en": "Battle of Hengshan"
+    },
+    {
+        "time": "1120年",
+        "event": "海上之盟",
+        "importance": 1,
+        "en": "Alliance on the Sea"
+    },
+    {
+        "start": "1125年9月",
+        "end": "1127年3月",
+        "event": "靖康之难",
+        "importance": 3,
+        "en": "Jingkang Incident"
+    },
+    {
+        "time": "1142年",
+        "event": "绍兴和议",
+        "importance": 3,
+        "en": "Treaty of Shaoxing"
+    },
+    {
+        "time": "1161年",
+        "event": "采石大捷",
+        "importance": 2,
+        "en": "Victory at Caishi"
+    },
+    {
+        "time": "1164年",
+        "event": "隆兴和议",
+        "importance": 3,
+        "en": "Treaty of Longxing"
+    },
+    {
+        "time": "1194年",
+        "event": "绍熙内禅",
+        "importance": 4,
+        "en": "Abdication of Shaoxi"
+    },
+    {
+        "start": "1195年",
+        "end": "1202年",
+        "event": "庆元党禁",
+        "importance": 1,
+        "en": "Qingyuan Party Prohibition"
+    },
+    {
+        "time": "1206年",
+        "event": "开禧北伐",
+        "importance": 1,
+        "en": "Northern Expedition of Kaixi"
+    },
+    {
+        "time": "1233年",
+        "event": "端平更化",
+        "importance": 1,
+        "en": "Duanping Reform"
+    },
+    {
+        "start": "1267年",
+        "end": "1273年",
+        "event": "宋蒙襄樊战争",
+        "importance": 2,
+        "en": "Battle of Xiangfan"
+    },
+    {
+        "time": "1279年",
+        "event": "厓山海战",
+        "importance": 4,
+        "en": "Battle of Yashan"
+    }
+]
